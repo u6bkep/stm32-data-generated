@@ -208,6 +208,74 @@
                     ),
                 },
                 BlockItem {
+                    name: "pcrop2sr",
+                    description: Some(
+                        "Flash Bank 2 PCROP Start address register",
+                    ),
+                    array: None,
+                    byte_offset: 0x44,
+                    inner: BlockItemInner::Register(
+                        Register {
+                            access: Access::ReadWrite,
+                            bit_size: 32,
+                            fieldset: Some(
+                                "Pcrop2sr",
+                            ),
+                        },
+                    ),
+                },
+                BlockItem {
+                    name: "pcrop2er",
+                    description: Some(
+                        "Flash Bank 2 PCROP End address register",
+                    ),
+                    array: None,
+                    byte_offset: 0x48,
+                    inner: BlockItemInner::Register(
+                        Register {
+                            access: Access::ReadWrite,
+                            bit_size: 32,
+                            fieldset: Some(
+                                "Pcrop2er",
+                            ),
+                        },
+                    ),
+                },
+                BlockItem {
+                    name: "wrp2ar",
+                    description: Some(
+                        "Flash Bank 2 WRP area A address register",
+                    ),
+                    array: None,
+                    byte_offset: 0x4c,
+                    inner: BlockItemInner::Register(
+                        Register {
+                            access: Access::ReadWrite,
+                            bit_size: 32,
+                            fieldset: Some(
+                                "Wrp2ar",
+                            ),
+                        },
+                    ),
+                },
+                BlockItem {
+                    name: "wrp2br",
+                    description: Some(
+                        "Flash Bank 2 WRP area B address register",
+                    ),
+                    array: None,
+                    byte_offset: 0x50,
+                    inner: BlockItemInner::Register(
+                        Register {
+                            access: Access::ReadWrite,
+                            bit_size: 32,
+                            fieldset: Some(
+                                "Wrp2br",
+                            ),
+                        },
+                    ),
+                },
+                BlockItem {
                     name: "sec1r",
                     description: Some(
                         "securable area bank1 register",
@@ -220,6 +288,23 @@
                             bit_size: 32,
                             fieldset: Some(
                                 "Sec1r",
+                            ),
+                        },
+                    ),
+                },
+                BlockItem {
+                    name: "sec2r",
+                    description: Some(
+                        "securable area bank2 register",
+                    ),
+                    array: None,
+                    byte_offset: 0x74,
+                    inner: BlockItemInner::Register(
+                        Register {
+                            access: Access::ReadWrite,
+                            bit_size: 32,
+                            fieldset: Some(
+                                "Sec2r",
                             ),
                         },
                     ),
@@ -431,6 +516,20 @@
                     enumm: None,
                 },
                 Field {
+                    name: "bker",
+                    description: Some(
+                        "Bank erase",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 11,
+                        },
+                    ),
+                    bit_size: 1,
+                    array: None,
+                    enumm: None,
+                },
+                Field {
                     name: "mer2",
                     description: Some(
                         "Bank 2 Mass erase",
@@ -545,11 +644,25 @@
                 Field {
                     name: "sec_prot1",
                     description: Some(
-                        "Securable memory area protection enable",
+                        "Securable memory area protection bit for bank 1",
                     ),
                     bit_offset: BitOffset::Regular(
                         RegularBitOffset {
                             offset: 28,
+                        },
+                    ),
+                    bit_size: 1,
+                    array: None,
+                    enumm: None,
+                },
+                Field {
+                    name: "sec_prot2",
+                    description: Some(
+                        "Securable memory area protection bit for bank 2",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 29,
                         },
                     ),
                     bit_size: 1,
@@ -887,9 +1000,9 @@
                     enumm: None,
                 },
                 Field {
-                    name: "sram2_pe",
+                    name: "sram_pe",
                     description: Some(
-                        "SRAM2 parity check enable",
+                        "SRAM1 and CCM SRAM parity check enable",
                     ),
                     bit_offset: BitOffset::Regular(
                         RegularBitOffset {
@@ -901,9 +1014,9 @@
                     enumm: None,
                 },
                 Field {
-                    name: "sram2_rst",
+                    name: "ccmsram_rst",
                     description: Some(
-                        "SRAM2 Erase when system reset",
+                        "CCM SRAM Erase when system reset",
                     ),
                     bit_offset: BitOffset::Regular(
                         RegularBitOffset {
@@ -917,7 +1030,7 @@
                 Field {
                     name: "n_swboot0",
                     description: Some(
-                        "nSWBOOT0",
+                        "Software BOOT0",
                     ),
                     bit_offset: BitOffset::Regular(
                         RegularBitOffset {
@@ -1037,6 +1150,54 @@
             ],
         },
         FieldSet {
+            name: "Pcrop2er",
+            extends: None,
+            description: Some(
+                "Flash Bank 2 PCROP End address register",
+            ),
+            bit_size: 32,
+            fields: &[
+                Field {
+                    name: "pcrop2_end",
+                    description: Some(
+                        "Bank 2 PCROP area end offset",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 0,
+                        },
+                    ),
+                    bit_size: 15,
+                    array: None,
+                    enumm: None,
+                },
+            ],
+        },
+        FieldSet {
+            name: "Pcrop2sr",
+            extends: None,
+            description: Some(
+                "Flash Bank 2 PCROP Start address register",
+            ),
+            bit_size: 32,
+            fields: &[
+                Field {
+                    name: "pcrop2_strt",
+                    description: Some(
+                        "Bank 2 PCROP area start offset",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 0,
+                        },
+                    ),
+                    bit_size: 15,
+                    array: None,
+                    enumm: None,
+                },
+            ],
+        },
+        FieldSet {
             name: "Sec1r",
             extends: None,
             description: Some(
@@ -1069,6 +1230,30 @@
                         },
                     ),
                     bit_size: 1,
+                    array: None,
+                    enumm: None,
+                },
+            ],
+        },
+        FieldSet {
+            name: "Sec2r",
+            extends: None,
+            description: Some(
+                "securable area bank2 register",
+            ),
+            bit_size: 32,
+            fields: &[
+                Field {
+                    name: "sec_size2",
+                    description: Some(
+                        "SEC_SIZE2",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 0,
+                        },
+                    ),
+                    bit_size: 8,
                     array: None,
                     enumm: None,
                 },
@@ -1316,6 +1501,82 @@
                     name: "wrp1b_end",
                     description: Some(
                         "Bank 1 WRP second area B start offset",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 16,
+                        },
+                    ),
+                    bit_size: 7,
+                    array: None,
+                    enumm: None,
+                },
+            ],
+        },
+        FieldSet {
+            name: "Wrp2ar",
+            extends: None,
+            description: Some(
+                "Flash Bank 2 WRP area A address register",
+            ),
+            bit_size: 32,
+            fields: &[
+                Field {
+                    name: "wrp2a_strt",
+                    description: Some(
+                        "Bank 2 WRP first area “A” start offset",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 0,
+                        },
+                    ),
+                    bit_size: 7,
+                    array: None,
+                    enumm: None,
+                },
+                Field {
+                    name: "wrp2a_end",
+                    description: Some(
+                        "Bank 2 WRP first area “A” end offset",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 16,
+                        },
+                    ),
+                    bit_size: 7,
+                    array: None,
+                    enumm: None,
+                },
+            ],
+        },
+        FieldSet {
+            name: "Wrp2br",
+            extends: None,
+            description: Some(
+                "Flash Bank 2 WRP area B address register",
+            ),
+            bit_size: 32,
+            fields: &[
+                Field {
+                    name: "wrp2b_strt",
+                    description: Some(
+                        "Bank 2 WRP second area “B” start offset",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 0,
+                        },
+                    ),
+                    bit_size: 7,
+                    array: None,
+                    enumm: None,
+                },
+                Field {
+                    name: "wrp2b_end",
+                    description: Some(
+                        "Bank 2 WRP second area “B” end offset",
                     ),
                     bit_offset: BitOffset::Regular(
                         RegularBitOffset {
