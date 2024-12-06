@@ -301,7 +301,14 @@
     Peripheral {
         name: "DBGMCU",
         address: 0x40015800,
-        registers: None,
+        registers: Some(
+            PeripheralRegisters {
+                kind: "dbgmcu",
+                version: "u0",
+                block: "DBGMCU",
+                ir: &dbgmcu::REGISTERS,
+            },
+        ),
         rcc: None,
         pins: &[],
         dma_channels: &[],
@@ -3898,6 +3905,7 @@
 #[path="../registers/comp_u0.rs"] pub mod comp;
 #[path="../registers/crc_v3.rs"] pub mod crc;
 #[path="../registers/dac_v4.rs"] pub mod dac;
+#[path="../registers/dbgmcu_u0.rs"] pub mod dbgmcu;
 #[path="../registers/dmamux_v1.rs"] pub mod dmamux;
 #[path="../registers/exti_u0.rs"] pub mod exti;
 #[path="../registers/flash_u0.rs"] pub mod flash;

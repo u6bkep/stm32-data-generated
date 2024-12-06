@@ -213,6 +213,40 @@
                         },
                     ),
                 },
+                BlockItem {
+                    name: "otghsphycr",
+                    description: Some(
+                        "OTG_HS PHY register",
+                    ),
+                    array: None,
+                    byte_offset: 0x74,
+                    inner: BlockItemInner::Register(
+                        Register {
+                            access: Access::ReadWrite,
+                            bit_size: 32,
+                            fieldset: Some(
+                                "Otghsphycr",
+                            ),
+                        },
+                    ),
+                },
+                BlockItem {
+                    name: "otghsphytuner2",
+                    description: Some(
+                        "OTG_HS PHY tune register 2",
+                    ),
+                    array: None,
+                    byte_offset: 0x7c,
+                    inner: BlockItemInner::Register(
+                        Register {
+                            access: Access::ReadWrite,
+                            bit_size: 32,
+                            fieldset: Some(
+                                "Otghsphytuner2",
+                            ),
+                        },
+                    ),
+                },
             ],
         },
     ],
@@ -756,6 +790,112 @@
             ],
         },
         FieldSet {
+            name: "Otghsphycr",
+            extends: None,
+            description: Some(
+                "OTG_HS PHY register",
+            ),
+            bit_size: 32,
+            fields: &[
+                Field {
+                    name: "en",
+                    description: Some(
+                        "PHY Enable",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 0,
+                        },
+                    ),
+                    bit_size: 1,
+                    array: None,
+                    enumm: None,
+                },
+                Field {
+                    name: "pdctrl",
+                    description: Some(
+                        "Common block power-down control",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 1,
+                        },
+                    ),
+                    bit_size: 1,
+                    array: None,
+                    enumm: None,
+                },
+                Field {
+                    name: "clksel",
+                    description: Some(
+                        "Reference clock frequency selection",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 2,
+                        },
+                    ),
+                    bit_size: 4,
+                    array: None,
+                    enumm: Some(
+                        "Usbrefcksel",
+                    ),
+                },
+            ],
+        },
+        FieldSet {
+            name: "Otghsphytuner2",
+            extends: None,
+            description: Some(
+                "OTG_HS tune register 2",
+            ),
+            bit_size: 32,
+            fields: &[
+                Field {
+                    name: "compdistune",
+                    description: Some(
+                        "Disconnect threshold adjustment",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 0,
+                        },
+                    ),
+                    bit_size: 3,
+                    array: None,
+                    enumm: None,
+                },
+                Field {
+                    name: "sqrxtune",
+                    description: Some(
+                        "Squelch threshold adjustment",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 4,
+                        },
+                    ),
+                    bit_size: 3,
+                    array: None,
+                    enumm: None,
+                },
+                Field {
+                    name: "txpreempamptune",
+                    description: Some(
+                        "HS transmitter preemphasis current control",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 13,
+                        },
+                    ),
+                    bit_size: 2,
+                    array: None,
+                    enumm: None,
+                },
+            ],
+        },
+        FieldSet {
             name: "Rsscmdr",
             extends: None,
             description: Some(
@@ -870,6 +1010,56 @@
             ],
         },
     ],
-    enums: &[],
+    enums: &[
+        Enum {
+            name: "Usbrefcksel",
+            description: None,
+            bit_size: 4,
+            variants: &[
+                EnumVariant {
+                    name: "MHZ16",
+                    description: Some(
+                        "The kernel clock frequency provided to the OTG_HS PHY is 16 MHz.",
+                    ),
+                    value: 3,
+                },
+                EnumVariant {
+                    name: "MHZ19_2",
+                    description: Some(
+                        "The kernel clock frequency provided to the OTG_HS PHY is 19.2 MHz.",
+                    ),
+                    value: 8,
+                },
+                EnumVariant {
+                    name: "MHZ20",
+                    description: Some(
+                        "The kernel clock frequency provided to the OTG_HS PHY is 20MHz.",
+                    ),
+                    value: 9,
+                },
+                EnumVariant {
+                    name: "MHZ24",
+                    description: Some(
+                        "The kernel clock frequency provided to the OTG_HS PHY is 24 MHz (default after reset).",
+                    ),
+                    value: 10,
+                },
+                EnumVariant {
+                    name: "MHZ32",
+                    description: Some(
+                        "The kernel clock frequency provided to the OTG_HS PHY is 32 MHz.",
+                    ),
+                    value: 11,
+                },
+                EnumVariant {
+                    name: "MHZ26",
+                    description: Some(
+                        "The kernel clock frequency provided to the OTG_HS PHY is 26 MHz.",
+                    ),
+                    value: 14,
+                },
+            ],
+        },
+    ],
 };
                 

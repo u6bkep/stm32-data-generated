@@ -3134,7 +3134,7 @@
         },
         {
           "name": "FMC",
-          "address": 1610612736,
+          "address": 1191183360,
           "registers": {
             "kind": "fmc",
             "version": "v4",
@@ -10087,7 +10087,7 @@
           "address": 1073798144,
           "registers": {
             "kind": "ucpd",
-            "version": "v1",
+            "version": "h5",
             "block": "UCPD"
           },
           "rcc": {

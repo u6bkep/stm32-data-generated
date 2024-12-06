@@ -3741,9 +3741,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "updcpt",
@@ -3757,9 +3755,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "exevcpt",
@@ -3780,9 +3776,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "txset",
@@ -3796,9 +3790,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "txrst",
@@ -3812,9 +3804,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "txcmp",
@@ -3835,9 +3825,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "tyset",
@@ -3851,9 +3839,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "tyrst",
@@ -3867,9 +3853,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "tycmp",
@@ -3890,9 +3874,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "tzset",
@@ -3906,9 +3888,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "tzrst",
@@ -3922,9 +3902,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "tzcmp",
@@ -3945,9 +3923,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "ttset",
@@ -3961,9 +3937,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "ttrst",
@@ -3977,9 +3951,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "ttcmp",
@@ -4000,9 +3972,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Captureeffect",
-                    ),
+                    enumm: None,
                 },
             ],
         },
@@ -4258,9 +4228,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Syncrst",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "syncstrt",
@@ -4274,9 +4242,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Syncstrt",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "delcmp2",
@@ -4989,9 +4955,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Flten",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "fltlck",
@@ -5313,9 +5277,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "TimaisrDlyprt",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "cppstat",
@@ -5368,9 +5330,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Outputstate",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "ocpy",
@@ -5391,9 +5351,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Outputstate",
-                    ),
+                    enumm: None,
                 },
             ],
         },
@@ -5477,7 +5435,7 @@
                     enumm: None,
                 },
                 Field {
-                    name: "faultx",
+                    name: "fault",
                     description: Some(
                         "Output X Fault state",
                     ),
@@ -5661,9 +5619,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Reseteffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "cmp",
@@ -5684,9 +5640,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Reseteffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "mstper",
@@ -5700,9 +5654,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Reseteffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "mstcmp",
@@ -5723,9 +5675,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Reseteffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "extevnt",
@@ -5746,9 +5696,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Reseteffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "tcmp1",
@@ -5773,9 +5721,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Reseteffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "tcmp2",
@@ -5800,9 +5746,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Reseteffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "tcmp4",
@@ -5827,9 +5771,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Reseteffect",
-                    ),
+                    enumm: None,
                 },
             ],
         },
@@ -5853,9 +5795,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Inactiveeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "resync",
@@ -5869,9 +5809,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Inactiveeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "per",
@@ -5885,9 +5823,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Inactiveeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "cmp",
@@ -5908,9 +5844,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Inactiveeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "mstper",
@@ -5924,9 +5858,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Inactiveeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "mstcmp",
@@ -5947,9 +5879,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Inactiveeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "timevnt",
@@ -5970,9 +5900,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Inactiveeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "extevnt",
@@ -5993,9 +5921,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Inactiveeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "update",
@@ -6009,9 +5935,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Inactiveeffect",
-                    ),
+                    enumm: None,
                 },
             ],
         },
@@ -6035,9 +5959,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Activeeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "resync",
@@ -6051,9 +5973,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Activeeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "per",
@@ -6067,9 +5987,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Activeeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "cmp",
@@ -6090,9 +6008,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Activeeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "mstper",
@@ -6106,9 +6022,7 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Activeeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "mstcmpx",
@@ -6129,9 +6043,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Activeeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "timevnt",
@@ -6152,9 +6064,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Activeeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "extevnt",
@@ -6175,9 +6085,7 @@
                             },
                         ),
                     ),
-                    enumm: Some(
-                        "Activeeffect",
-                    ),
+                    enumm: None,
                 },
                 Field {
                     name: "update",
@@ -6191,35 +6099,12 @@
                     ),
                     bit_size: 1,
                     array: None,
-                    enumm: Some(
-                        "Activeeffect",
-                    ),
+                    enumm: None,
                 },
             ],
         },
     ],
     enums: &[
-        Enum {
-            name: "Activeeffect",
-            description: None,
-            bit_size: 1,
-            variants: &[
-                EnumVariant {
-                    name: "NOEFFECT",
-                    description: Some(
-                        "Timer event has no effect",
-                    ),
-                    value: 0,
-                },
-                EnumVariant {
-                    name: "SETACTIVE",
-                    description: Some(
-                        "Timer event forces the output to its active state",
-                    ),
-                    value: 1,
-                },
-            ],
-        },
         Enum {
             name: "Brstdma",
             description: None,
@@ -6245,27 +6130,6 @@
                         "Update done on master timer roll-over following a DMA burst transfer completion",
                     ),
                     value: 2,
-                },
-            ],
-        },
-        Enum {
-            name: "Captureeffect",
-            description: None,
-            bit_size: 1,
-            variants: &[
-                EnumVariant {
-                    name: "NOEFFECT",
-                    description: Some(
-                        "Timer event has no effect",
-                    ),
-                    value: 0,
-                },
-                EnumVariant {
-                    name: "TRIGGERCAPTURE",
-                    description: Some(
-                        "Timer event triggers capture",
-                    ),
-                    value: 1,
                 },
             ],
         },
@@ -6578,48 +6442,6 @@
             ],
         },
         Enum {
-            name: "Flten",
-            description: None,
-            bit_size: 1,
-            variants: &[
-                EnumVariant {
-                    name: "IGNORED",
-                    description: Some(
-                        "Fault input ignored",
-                    ),
-                    value: 0,
-                },
-                EnumVariant {
-                    name: "ACTIVE",
-                    description: Some(
-                        "Fault input is active and can disable HRTIM outputs",
-                    ),
-                    value: 1,
-                },
-            ],
-        },
-        Enum {
-            name: "Inactiveeffect",
-            description: None,
-            bit_size: 1,
-            variants: &[
-                EnumVariant {
-                    name: "NOEFFECT",
-                    description: Some(
-                        "Timer event has no effect",
-                    ),
-                    value: 0,
-                },
-                EnumVariant {
-                    name: "SETINACTIVE",
-                    description: Some(
-                        "Timer event forces the output to its inactive state",
-                    ),
-                    value: 1,
-                },
-            ],
-        },
-        Enum {
             name: "Ippstat",
             description: None,
             bit_size: 1,
@@ -6641,27 +6463,6 @@
             ],
         },
         Enum {
-            name: "Outputstate",
-            description: None,
-            bit_size: 1,
-            variants: &[
-                EnumVariant {
-                    name: "INACTIVE",
-                    description: Some(
-                        "Output is or was inactive",
-                    ),
-                    value: 0,
-                },
-                EnumVariant {
-                    name: "ACTIVE",
-                    description: Some(
-                        "Output is or was active",
-                    ),
-                    value: 1,
-                },
-            ],
-        },
-        Enum {
             name: "Pol",
             description: None,
             bit_size: 1,
@@ -6677,27 +6478,6 @@
                     name: "ACTIVELOW",
                     description: Some(
                         "Negative polarity (output active low)",
-                    ),
-                    value: 1,
-                },
-            ],
-        },
-        Enum {
-            name: "Reseteffect",
-            description: None,
-            bit_size: 1,
-            variants: &[
-                EnumVariant {
-                    name: "NOEFFECT",
-                    description: Some(
-                        "Timer Y compare Z event has no effect",
-                    ),
-                    value: 0,
-                },
-                EnumVariant {
-                    name: "RESETCOUNTER",
-                    description: Some(
-                        "Timer X counter is reset upon timer Y compare Z event",
                     ),
                     value: 1,
                 },
@@ -6802,27 +6582,6 @@
             ],
         },
         Enum {
-            name: "Syncrst",
-            description: None,
-            bit_size: 1,
-            variants: &[
-                EnumVariant {
-                    name: "DISABLED",
-                    description: Some(
-                        "Synchronization event has no effect on Timer x",
-                    ),
-                    value: 0,
-                },
-                EnumVariant {
-                    name: "RESET",
-                    description: Some(
-                        "Synchronization event resets Timer x",
-                    ),
-                    value: 1,
-                },
-            ],
-        },
-        Enum {
             name: "Syncsrc",
             description: None,
             bit_size: 2,
@@ -6854,48 +6613,6 @@
                         "Timer A Compare 1 event",
                     ),
                     value: 3,
-                },
-            ],
-        },
-        Enum {
-            name: "Syncstrt",
-            description: None,
-            bit_size: 1,
-            variants: &[
-                EnumVariant {
-                    name: "DISABLED",
-                    description: Some(
-                        "Synchronization event has no effect on Timer x",
-                    ),
-                    value: 0,
-                },
-                EnumVariant {
-                    name: "START",
-                    description: Some(
-                        "Synchronization event starts Timer x",
-                    ),
-                    value: 1,
-                },
-            ],
-        },
-        Enum {
-            name: "TimaisrDlyprt",
-            description: None,
-            bit_size: 1,
-            variants: &[
-                EnumVariant {
-                    name: "INACTIVE",
-                    description: Some(
-                        "Not in delayed idle or balanced idle mode",
-                    ),
-                    value: 0,
-                },
-                EnumVariant {
-                    name: "ACTIVE",
-                    description: Some(
-                        "Delayed idle or balanced idle mode entry",
-                    ),
-                    value: 1,
                 },
             ],
         },

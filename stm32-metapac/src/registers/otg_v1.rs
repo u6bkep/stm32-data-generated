@@ -6,7 +6,7 @@
             name: "Otg",
             extends: None,
             description: Some(
-                "USB OTG core by Synopsys (more docs at https://www.intel.com/content/www/us/en/programmable/hps/agilex5/index_frames.html)",
+                "USB OTG core by Synopsys (more docs at <https://www.intel.com/content/www/us/en/programmable/hps/agilex5/index_frames.html>)",
             ),
             items: &[
                 BlockItem {

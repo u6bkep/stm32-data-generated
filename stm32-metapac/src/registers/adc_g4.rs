@@ -513,22 +513,6 @@
             bit_size: 32,
             fields: &[
                 Field {
-                    name: "dmacfg",
-                    description: Some(
-                        "Direct memory access configuration",
-                    ),
-                    bit_offset: BitOffset::Regular(
-                        RegularBitOffset {
-                            offset: 0,
-                        },
-                    ),
-                    bit_size: 1,
-                    array: None,
-                    enumm: Some(
-                        "Dmacfg",
-                    ),
-                },
-                Field {
                     name: "dmaen",
                     description: Some(
                         "Direct memory access enable",
@@ -542,6 +526,22 @@
                     array: None,
                     enumm: Some(
                         "Dmaen",
+                    ),
+                },
+                Field {
+                    name: "dmacfg",
+                    description: Some(
+                        "Direct memory access configuration",
+                    ),
+                    bit_offset: BitOffset::Regular(
+                        RegularBitOffset {
+                            offset: 1,
+                        },
+                    ),
+                    bit_size: 1,
+                    array: None,
+                    enumm: Some(
+                        "Dmacfg",
                     ),
                 },
                 Field {

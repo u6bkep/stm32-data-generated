@@ -1158,10 +1158,10 @@
         address: 0x40006000,
         registers: Some(
             PeripheralRegisters {
-                kind: "i2c2",
+                kind: "fmpi2c",
                 version: "v2",
                 block: "FMPI2C",
-                ir: &i2c2::REGISTERS,
+                ir: &fmpi2c::REGISTERS,
             },
         ),
         rcc: Some(
@@ -2720,7 +2720,30 @@
                 ir: &spdifrx::REGISTERS,
             },
         ),
-        rcc: None,
+        rcc: Some(
+            PeripheralRcc {
+                bus_clock: "PCLK1",
+                kernel_clock: Mux(
+                    PeripheralRccRegister {
+                        register: "DCKCFGR2",
+                        field: "SPDIFRXSEL",
+                    },
+                ),
+                enable: Some(
+                    PeripheralRccRegister {
+                        register: "APB1ENR",
+                        field: "SPDIFRXEN",
+                    },
+                ),
+                reset: Some(
+                    PeripheralRccRegister {
+                        register: "APB1RSTR",
+                        field: "SPDIFRXRST",
+                    },
+                ),
+                stop_mode: StopMode::Stop1,
+            },
+        ),
         pins: &[
             PeripheralPin {
                 pin: "PB7",
@@ -6993,9 +7016,9 @@
 #[path="../registers/dma_v2.rs"] pub mod dma;
 #[path="../registers/exti_v1.rs"] pub mod exti;
 #[path="../registers/flash_f4.rs"] pub mod flash;
+#[path="../registers/fmpi2c_v2.rs"] pub mod fmpi2c;
 #[path="../registers/gpio_v2.rs"] pub mod gpio;
 #[path="../registers/i2c_v1.rs"] pub mod i2c;
-#[path="../registers/i2c2_v2.rs"] pub mod i2c2;
 #[path="../registers/iwdg_v1.rs"] pub mod iwdg;
 #[path="../registers/otg_v1.rs"] pub mod otg;
 #[path="../registers/pwr_f4.rs"] pub mod pwr;

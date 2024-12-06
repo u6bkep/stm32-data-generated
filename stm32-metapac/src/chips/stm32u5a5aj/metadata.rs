@@ -12,7 +12,7 @@ include!("../metadata_0781.rs");
         size: 2097152,
         settings: Some(
             FlashSettings {
-                erase_size: 16384,
+                erase_size: 8192,
                 write_size: 16,
                 erase_value: 255,
             },
@@ -25,7 +25,7 @@ include!("../metadata_0781.rs");
         size: 2097152,
         settings: Some(
             FlashSettings {
-                erase_size: 16384,
+                erase_size: 8192,
                 write_size: 16,
                 erase_value: 255,
             },

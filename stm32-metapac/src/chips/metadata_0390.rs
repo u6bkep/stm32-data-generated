@@ -9010,7 +9010,7 @@
         registers: Some(
             PeripheralRegisters {
                 kind: "ucpd",
-                version: "v1",
+                version: "h5",
                 block: "UCPD",
                 ir: &ucpd::REGISTERS,
             },
@@ -10625,7 +10625,7 @@
 #[path="../registers/syscfg_h5.rs"] pub mod syscfg;
 #[path="../registers/tamp_h5.rs"] pub mod tamp;
 #[path="../registers/timer_v2.rs"] pub mod timer;
-#[path="../registers/ucpd_v1.rs"] pub mod ucpd;
+#[path="../registers/ucpd_h5.rs"] pub mod ucpd;
 #[path="../registers/uid_v1.rs"] pub mod uid;
 #[path="../registers/usart_v4.rs"] pub mod usart;
 #[path="../registers/usb_v4.rs"] pub mod usb;

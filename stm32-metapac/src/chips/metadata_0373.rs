@@ -3,7 +3,14 @@
     Peripheral {
         name: "ADC1",
         address: 0x42028000,
-        registers: None,
+        registers: Some(
+            PeripheralRegisters {
+                kind: "adc",
+                version: "h5",
+                block: "ADC",
+                ir: &adc::REGISTERS,
+            },
+        ),
         rcc: Some(
             PeripheralRcc {
                 bus_clock: "HCLK2",
@@ -200,7 +207,14 @@
     Peripheral {
         name: "ADC2",
         address: 0x42028100,
-        registers: None,
+        registers: Some(
+            PeripheralRegisters {
+                kind: "adc",
+                version: "h5",
+                block: "ADC",
+                ir: &adc::REGISTERS,
+            },
+        ),
         rcc: Some(
             PeripheralRcc {
                 bus_clock: "HCLK2",
@@ -7133,7 +7147,7 @@
         registers: Some(
             PeripheralRegisters {
                 kind: "ucpd",
-                version: "v1",
+                version: "h5",
                 block: "UCPD",
                 ir: &ucpd::REGISTERS,
             },
@@ -8559,7 +8573,8 @@
         dmamux_channel: None,
     },
 ];
-            #[path="../registers/adccommon_h5.rs"] pub mod adccommon;
+            #[path="../registers/adc_h5.rs"] pub mod adc;
+#[path="../registers/adccommon_h5.rs"] pub mod adccommon;
 #[path="../registers/can_fdcan_v1.rs"] pub mod can;
 #[path="../registers/cec_v2.rs"] pub mod cec;
 #[path="../registers/crc_v3.rs"] pub mod crc;
@@ -8591,7 +8606,7 @@
 #[path="../registers/syscfg_h5.rs"] pub mod syscfg;
 #[path="../registers/tamp_h5.rs"] pub mod tamp;
 #[path="../registers/timer_v2.rs"] pub mod timer;
-#[path="../registers/ucpd_v1.rs"] pub mod ucpd;
+#[path="../registers/ucpd_h5.rs"] pub mod ucpd;
 #[path="../registers/uid_v1.rs"] pub mod uid;
 #[path="../registers/usart_v4.rs"] pub mod usart;
 #[path="../registers/usb_v4.rs"] pub mod usb;

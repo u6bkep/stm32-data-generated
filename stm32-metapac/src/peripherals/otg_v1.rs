@@ -3,7 +3,7 @@
                 #![allow(clippy::unnecessary_cast)]
                 #![allow(clippy::erasing_op)]
 
-# [doc = "USB OTG core by Synopsys (more docs at https://www.intel.com/content/www/us/en/programmable/hps/agilex5/index_frames.html)"]
+# [doc = "USB OTG core by Synopsys (more docs at <https://www.intel.com/content/www/us/en/programmable/hps/agilex5/index_frames.html>)"]
 # [derive (Copy , Clone , Eq , PartialEq)]
 pub struct Otg { ptr : * mut u8 } unsafe impl Send for Otg { } unsafe impl Sync for Otg { } impl Otg { # [inline (always)]
 pub const unsafe fn from_ptr (ptr : * mut ()) -> Self { Self { ptr : ptr as _ , } } # [inline (always)]

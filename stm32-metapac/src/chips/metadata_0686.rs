@@ -1823,7 +1823,7 @@
     },
     Peripheral {
         name: "FMC",
-        address: 0x60000000,
+        address: 0xa0000000,
         registers: None,
         rcc: Some(
             PeripheralRcc {

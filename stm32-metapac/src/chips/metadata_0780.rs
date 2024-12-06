@@ -1762,7 +1762,7 @@
     },
     Peripheral {
         name: "FMC",
-        address: 0x60000000,
+        address: 0x420d0400,
         registers: None,
         rcc: None,
         pins: &[
